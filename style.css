@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --blue: #48CAE4;
+    --white: #FFFFFF;
+    --black: #2b2b2b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 6.25rem;
+}
+
+.primary-btn > a{
+    padding: 0.75rem 1.5rem;
+    border-radius: 99px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s top ease-in-out;
+}
+
+#navbar .container{
+    padding-block: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: brightness(50%);
+}
+
+#hamburger-btn{
+    display: none;
+}
+
+#hamburger-btn > span{
+    display: flex;
+}
+
+#navbar .container .nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#navbar .container .nav-menu a{
+    color: var(--white);
+    font-weight: 500;
+}
+
+#navbar .container .nav-menu .nav-link{
+    display: flex;
+    gap: 2rem;
+}
+
+#navbar .container .nav-menu .nav-link .active{
+    color: var(--blue);
+}
+
+#hero-section .container{
+    min-height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./assets/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-section .container .hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#hero-section .container .hero-content .heading > h1{
+    font-size: 64px;
+    color: var(--blue);
+}
+
+#hero-section .container .hero-content .heading > p{
+    font-size: 18px;
+    color: var(--white);
+}
+
+#hero-section .container .hero-image > img{
+    width: 400px;
+}
+
+#hero-section .container .hero-content .lets-talk-btn > a{
+    padding-inline: 3rem;
+}
+
+#about-section .container{
+    padding-block: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#about-section .container .about-image > img{
+    width: 400px;
+}
+
+#about-section .container .about-content{
+    text-align: end;
+    color: var(--black);
+}
+
+#about-section .container .about-content > h2{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+#about-section .container .about-content > p{
+    font-size: 18px;
+}
+
+#service-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+    padding-block: 3rem;
+    background-color: #90E0EF;
+}
+
+#service-section .container > h2{
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+#service-section .container .service-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+}
+
+#service-section .container .service-content .service-card{
+    padding: 3rem;
+    background-color: var(--white);
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+#service-section .container .service-content .service-card .service-detail{
+    height: 100%;
+}
+
+#service-section .container .service-content .service-card .service-detail > h3{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+#service-section .container .service-content .service-card > a{
+    font-weight: 600;
+    color: var(--blue);
+}
+
+#contact-section .container{
+    display: flex;
+    flex-direction: column;
+    padding-block: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact-section .container > h2{
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+#contact-section .container .container-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#contact-section .container .contact-photo > img{
+    width: 400px;
+}
+
+#contact-section .container .contact-form{
+    width: 717px;
+    height: 808px;
+    background-color: #90E0EF;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+#contact-section .container .contact-form .gender{
+    width: 16px;
+    height: 16px;
+    border-radius: 37px;
+    margin-bottom: 16px;
+}
+
+#contact-section .container .contact-form .message{
+    width: 621px;
+    height: 204px;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+#contact-section .container .contact-form .submit{
+    width: 276px;
+    height: 62px;
+    background: #FFFFFF;
+    border: 3px solid #90E0EF;
+    border-radius: 16px;
+    
+}
+
+#contact-section .container .contact-form  input{
+    background: #CAF0F8;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    padding: 16px 12px;
+    width: 294.5px;
+    height: 54px;
+    margin-bottom: 16px;
+}
+
+input{
+    accent-color: var(--black);
+}
+
+input::placeholder{
+    margin-left: 5px;
+}
+
+
+footer .container{
+    align-items: center;
+    background: #2b2b2b;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
+footer .container > img{
+    padding-top: 50px;
+}
+
+footer .container .mangga-dua{
+    margin-bottom: 32px;
+}
+
+footer .container .line{
+    width: 1260px;
+    height: 1.71px;
+    background-color: white;
+}
+
+footer .container ul>li{
+    display: inline;
+    align-items: center;
+    list-style: none;   
+    justify-content: space-between;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+footer .container ul>li> a{
+    color: white;
+}
+
+
+
+
+@media only screen and(max-width: 1024px){
+    .container{
+        padding: 0 4rem;
+    }
+
+    #navbar .container{
+        position: relative;
+    }
+
+    .nav-menu .navlink{
+        flex-direction: column;
+    }
+
+    .nav-menu{
+        padding: 2rem 3rem;
+        height: 100vh;
+        background-color: black;
+        position: aboslute;
+        top: 0;
+        right: 0-300px;
+        flex-direction: column;
+    }
+
+
+}
+
+@media only screen and(max-width: 768px){
+    .container{
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and(max-width: 480px){
+    .container{
+        padding: 0 1.5rem;
+    }
+}
